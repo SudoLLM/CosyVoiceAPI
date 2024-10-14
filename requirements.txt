@@ -1,4 +1,4 @@
---extra-index-url https://download.pytorch.org/whl/cu118
+# --extra-index-url https://download.pytorch.org/whl/cu121
 conformer==0.3.2
 deepspeed==0.14.2; sys_platform == 'linux'
 diffusers==0.27.2
@@ -24,10 +24,15 @@ pydantic==2.7.0
 rich==13.7.1
 soundfile==0.12.1
 tensorboard==2.14.0
-torch==2.0.1
-torchaudio==2.0.2
+torch==2.2.2
+torchaudio==2.2.2
 uvicorn==0.30.0
 wget==3.2
 fastapi==0.111.0
 fastapi-cli==0.0.4
 WeTextProcessing==1.0.3
+
+celery==5.4.0
+# https://github.com/celery/celery/blob/main/requirements/extras/redis.txt
+redis>=4.5.2,<6.0.0,!=4.5.5
+cos-python-sdk-v5==1.9.31
